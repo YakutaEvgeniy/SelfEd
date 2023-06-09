@@ -17,6 +17,7 @@ class gamePage{
     sortGameByDesc = function() {
         this.elements.sortGameMenu().click()
         this.elements.descElement().click()
+        cy.wait(2000)
     }
 }
 
