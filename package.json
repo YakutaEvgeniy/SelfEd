@@ -5,6 +5,11 @@
   },
   "devDependencies": {
     "cypress-map": "^1.21.0",
-    "cypress-xpath": "^2.0.1"
+    "cypress-xpath": "^2.0.1",
+    "rome": "12.1.3"
+  },
+  "scripts": {
+    "format": "rome format .",
+    "format.fix": "rome format . --write"
   }
 }

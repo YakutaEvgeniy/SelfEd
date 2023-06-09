@@ -1,4 +1,1 @@
-[
-    { "game": "The Witcher", "count": "10" },
-    { "game": "Fallout", "count": "20" }
-  ]
+[{ "game": "The Witcher", "count": "10" }, { "game": "Fallout", "count": "20" }]
