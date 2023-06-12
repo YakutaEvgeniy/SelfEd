@@ -1,4 +1,5 @@
 class gamePage {
+	 timeout = require("../../fixtures/timeout.json");
 	elements = {
 		searchTag: () => cy.xpath('//*[@id="searchtag_tmpl"]//span'),
 		gameResulsRow: () => cy.xpath('//*[@id="search_resultsRows"]//a'),
@@ -13,7 +14,7 @@ class gamePage {
 	sortGameByDesc = function () {
 		this.elements.sortGameMenu().click();
 		this.elements.descElement().click();
-		cy.wait(2000);
+		cy.wait(timeout.gameListTimeout);
 	};
 
 	getPrices = (count) => {
